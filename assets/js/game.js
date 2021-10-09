@@ -3,6 +3,7 @@
 //      * Fight all enemy-robots
 //      * Defeat each enemy robot
 // "LOSE" - Player robot's health is zero or less
+
 var randomNumber = function(min, max) {
     var value = Math.floor(Math.random() * (max - min + 1) + min);
   
@@ -70,7 +71,7 @@ for (var i = 0; i < enemyInfo.length; i++) {
 
     if (playerInfo.health > 0) {
         window.alert("Welcome to Robot Gladiators! Round " + ( i + 1) );
-        debugger;
+        
         var pickedEnemyObj = enemyInfo[i];
 
     pickedEnemyObj.health = randomNumber(40, 60);
