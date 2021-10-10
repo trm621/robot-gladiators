@@ -121,6 +121,8 @@ for (var i = 0; i < enemyInfo.length; i++) {
 
     if (playerInfo.health > 0 && i < enemyInfo.length - 1) {
 
+      window.alert("Congratulations! You won! You now have a score of " + playerInfo.money + "!");
+
         var storeConfirm = window.confirm("The fight is over, visit the store before the next round?");
     
         if (storeConfirm) {
@@ -139,7 +141,7 @@ for (var i = 0; i < enemyInfo.length; i++) {
 };
 
   var endGame = function() {
-        window.alert("The game has now ended. Let's see how you did!");
+        window.alert("The game has now ended. Let's see how you did!")
         
         var highScore = localStorage.getItem("highscore") 
           if (highScore === null) {
